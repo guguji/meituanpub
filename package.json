@@ -1,0 +1,19 @@
+{
+  "name": "meituanpub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guguji/meituanpub"
+  },
+  "author": "xiaojigugu",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0"
+  }
+}
