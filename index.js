@@ -89,13 +89,10 @@ class meituanpub {
    * @param options 除utmSource参数以外的其他post参数
    */
   generateLink(options) {
-    return this.request("api/promotion/link", {
-      utmMedium: this.aesEncode(options.utmMedium),
-      utmSource: this.utmSource,
-      activity: options.activity,
-      promotionId: options.promotionId,
-      pageLevel: options.pageLevel || 2,
-    }, "post");
+    options.utmMedium = this.aesEncode(options.utmMedium);
+    options.pageLevel = options.pageLevel || 1;
+    options.utmSource =  this.utmSource;
+    return this.request("api/promotion/link", options, "post");
   }
 }
 
